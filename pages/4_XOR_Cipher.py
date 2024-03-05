@@ -6,4 +6,4 @@ st.text_area("Plain Text:")
 
 st.text_input("Key:")
 
-if st.button("Submit")
+# if st.button("Submit"):
