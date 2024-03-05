@@ -46,7 +46,7 @@ ciphertext = xor_encrypt(plaintext, key)
 print(f"Ciphertext: {ciphertext.decode()}")
 
 decrypted = xor_decrypt(ciphertext, key)
-print(f"Decrypted:" {decrypted}")
+print(f"Decrypted:" {decrypted})
 
 plaintext = bytes(input().encode())
 key = bytes(input().encode())     
