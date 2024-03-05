@@ -38,3 +38,15 @@ if btn_submit:
             decrypted_byte = ciphertext_byte ^ key_byte
             decrypted_text.append(decrypted_byte)
         return decrypted_text.decode('utf-8')
+    
+plaintext = input()
+key = input()
+
+ciphertext = xor_encrypt(plaintext, key)
+print(f"Ciphertext: {ciphertext.decode()}")
+
+decrypted = xor_decrypt(ciphertext, key)
+print(f"Decrypted:" {decrypted}")
+
+plaintext = bytes(input().encode())
+key = bytes(input().encode())     
